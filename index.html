@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Shazaan Raza - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">Shazaan Raza</div>
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#inspiration">Inspiration</a></li>
             </ul>
         </div>
     </nav>
@@ -45,7 +54,7 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a passionate Computer Science student with a unique blend of technical expertise and marketing savvy. My journey combines the analytical thinking of programming with the creative aspects of digital marketing.</p>
+                    <p>Computer Science student with technical expertise and marketing experince. My journey combines the analytical thinking of programming with the creative aspects of digital marketing.</p>
                     <p>I believe in creating technology solutions that not only work efficiently but also connect with users on a meaningful level.</p>
                 </div>
                 <div class="about-stats">
@@ -68,38 +77,38 @@
             <h2>Skills & Expertise</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
                     <ul>
-                        <li>C++</li>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>HTML/CSS</li>
+                        <li><i class="fab fa-cpp"></i> C++</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-html5"></i> HTML/CSS</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Marketing</h3>
+                    <h3><i class="fas fa-chart-line"></i> Marketing</h3>
                     <ul>
-                        <li>Market Research</li>
-                        <li>Campaign Strategy</li>
-                        <li>Trend Analysis</li>
+                        <li><i class="fas fa-search"></i> Market Research</li>
+                        <li><i class="fas fa-bullhorn"></i> Campaign Strategy</li>
+                        <li><i class="fas fa-chart-bar"></i> Trend Analysis</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Social Media Management</h3>
+                    <h3><i class="fas fa-share-alt"></i> Social Media Management</h3>
                     <ul>
-                        <li>Content Creation</li>
-                        <li>Brand Relations</li>
-                        <li>Creative Curation</li>
-                        <li>Audience Engagement</li>
+                        <li><i class="fas fa-pen-fancy"></i> Content Creation</li>
+                        <li><i class="fas fa-handshake"></i> Brand Relations</li>
+                        <li><i class="fas fa-paint-brush"></i> Creative Curation</li>
+                        <li><i class="fas fa-users"></i> Audience Engagement</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
                     <ul>
-                        <li>Git</li>
-                        <li>CapCut</li>
-                        <li>Adobe InDesign</li>
-                        <li>Adobe Illustrator</li>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                        <li><i class="fas fa-video"></i> CapCut</li>
+                        <li><i class="fas fa-paint-brush"></i> Adobe InDesign</li>
+                        <li><i class="fas fa-pencil-ruler"></i> Adobe Illustrator</li>
                     </ul>
                 </div>
             </div>
@@ -114,26 +123,58 @@
                 <div class="project-card">
                     <div class="project-image">
                         <img src="project1.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <h3>QR Code Generator</h3>
+                                <p>A simple and efficient QR code generation tool</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Technical Project</h3>
-                        <p>QR code generator.</p>
+                        <h3>QR Code Generator</h3>
+                        <p>A web application that generates QR codes from text input with customizable options.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">QR Code API</span>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/shazaanraza123/QR-code-generator" class="btn">View Project</a>
-                            <a href="https://github.com/shazaanraza123/QR-code-generator" class="btn">GitHub</a>
+                            <a href="https://github.com/shazaanraza123/QR-code-generator" class="btn">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/shazaanraza123/QR-code-generator" class="btn secondary">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
                         <img src="project2.webp" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <h3>Yeezy Marketing Campaign</h3>
+                                <p>Social media marketing strategy for Vultures 1 and YZY PODS</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="project-info">
-                        <h3>Marketing Campaign</h3>
-                        <p>Helped Yeezys with their marketing camapign for Vultures 1 and YZY PODS release.</p>
+                        <h3>Yeezy Marketing Campaign</h3>
+                        <p>Led social media marketing efforts for Yeezy's Vultures 1 album and YZY PODS release, creating engaging content and managing influencer collaborations.</p>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Social Media</span>
+                            <span class="tech-tag">Content Strategy</span>
+                            <span class="tech-tag">Influencer Marketing</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
                         <div class="project-links">
-                            <a href="yeezy_case_study_final.pdf" class="btn">View Case Study</a>
-                            <a href="yeezy_results_final.pdf" class="btn">Results</a>
+                            <a href="yeezy_case_study_final.pdf" class="btn">
+                                <i class="fas fa-file-alt"></i> Case Study
+                            </a>
+                            <a href="yeezy_results_final.pdf" class="btn secondary">
+                                <i class="fas fa-chart-bar"></i> Results
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -179,6 +220,24 @@
                             <li>Provided technical troubleshooting and improvements.</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this section before the Education section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-content">
+                <p>View or download my complete resume to learn more about my experience and qualifications.</p>
+                <div class="resume-buttons">
+                    <a href="NewResNew.pdf" class="btn primary" target="_blank">
+                        <i class="fas fa-file-pdf"></i> View Resume
+                    </a>
+                    <a href="NewResNew.pdf" class="btn secondary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
                 </div>
             </div>
         </div>
@@ -246,35 +305,67 @@
         </div>
     </section>
 
-    <!-- Inspiration Section -->
-    <section id="inspiration" class="inspiration">
-        <div class="container">
-            <h2>Inspiration</h2>
-            <div class="video-grid">
-                <div class="video-item">
-                    <h3>Virgil Abloh</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2y11ZJf7pKY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="video-item">
-                    <h3>Ye</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zxwfDlhJIpw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shazaanraza123?tab=repositories"><i class="fab fa-github"></i></a>
+                    <a href="www.linkedin.com/in/muhammed-raza-a80782223"><i class="fab fa-linkedin"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
-                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <p>&copy; 2024 Shazaan Raza. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Loading animation
+        window.addEventListener('load', () => {
+            const loading = document.querySelector('.loading');
+            loading.classList.add('hidden');
+        });
+
+        // Intersection Observer for section animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html> 
